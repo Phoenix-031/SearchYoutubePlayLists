@@ -1,0 +1,19 @@
+{
+    "manifest_version":3,
+    "name": "Yotube playlist search",
+    "version": "1.0",
+    "description": "Search for youtube playlist",
+    "icons": {
+        "16": "./assets/icon.png",
+        "32": "./assets/icon.png",
+        "48": "./assets/icon.png",
+        "128":"./assets/icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["scripts/search.js"]
+        }
+    ],
+    "permissions" : ["activeTab"]
+}
