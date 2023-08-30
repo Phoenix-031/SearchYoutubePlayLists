@@ -12,7 +12,7 @@
     "content_scripts": [
         {
             "matches": ["https://www.youtube.com/*"],
-            "js": ["scripts/search.js"]
+            "js": ["scripts/search.js", "scripts/group.js"]
         }
     ],
     "permissions" : ["activeTab"]
